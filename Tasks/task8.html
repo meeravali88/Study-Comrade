@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Div with Background and Overlay</title>
+  <style>
+    .background-container {
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      height: 300px;
+      background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80');
+      background-size: cover;
+      background-position: center;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      margin: 50px auto;
+    }
+
+    .overlay-text {
+      position: fixed;
+      top: 150px;
+      left: 20px;
+      right:40px;
+      text-align: center;
+      color:black;
+      font-size: 24px;
+      font-weight: bold;
+      text-shadow: 1px 1px 4px #000;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="background-container">
+    <div class="overlay-text">Welcome to Nature</div>
+    <div button style="position: absolute; top: 20px; left:80%;padding: 10px 20px; background-color: #9980b7;border-radius: 10px; cursor: pointer; box-shadow: 2px 5px rgba(0,0,0,0.2);">Click Me</div>
+  </div>
+
+</body>
+</html>

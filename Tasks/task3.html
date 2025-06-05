@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Task3</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+        body {
+            background-color: rgb(231, 221, 218)
+        }
+        header {
+            position: fixed;
+            top: 0; 
+            left: 0;
+            width: 100%;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(33, 146, 171);
+        }
+        .navigation {
+            display: flex;
+            gap: 20px;
+        }
+        button {
+           background-color: transparent;
+           border-radius: 20px;
+           border: 2px solid black;
+           color: white;
+           cursor: pointer;
+        }
+
+    </style>      
+    <body>
+        <header>
+            <h1 class="OWN LOGOS">own logos</h1>
+            <nav class="navigation">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+
+                <button class="button">login</button>
+            </nav>
+            </header>
+            <main>
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;height:80vh;">
+                    <input type="text" placeholder="Username" style="margin: 15px; border-radius: 10px;">
+                    <input type="password" placeholder="Password" style="margin: 15px; border-radius: 10px;">
+                    <label style="color:rgb(209, 8, 8); margin: 15px;">
+                        <input type="checkbox" style="margin-right: 15px;"> show password
+                    </label>
+                    <button style="margin: 15px; border-radius: 20px; border: 5px solid rgb(190, 160, 160); background: rgb(25, 24, 24); color: white; cursor: pointer;">submit</button>
+                </div>
+            </main>
+        </header>
+    </body>
+</html>
