@@ -1,0 +1,306 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Car Dealership Bus - Full Inventory
+  </title>
+  <style>
+   body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      background: white;
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #004080;
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+    .car-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+      gap: 1.5rem;
+    }
+    .car-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fafafa;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .car-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .car-details {
+      padding: 1rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .car-details h3 {
+      margin: 0 0 0.5rem 0;
+      color: #003366;
+    }
+    .car-details p {
+      margin: 0.3rem 0;
+      flex-grow: 1;
+    }
+    .car-details ul {
+      list-style: none;
+      padding: 0;
+      margin: 0.5rem 0 0 0;
+    }
+    .car-details ul li {
+      margin-bottom: 0.3rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #004080;
+      color: white;
+      margin-top: 2rem;
+    }
+    @media (max-width: 600px) {
+      nav {
+        width: 100%;
+        margin-top: 0.5rem;
+        text-align: center;
+      }
+      nav a {
+        margin: 0 0.5rem;
+        display: inline-block;
+        margin-bottom: 0.5rem;
+      }
+    }
+  </style>
+ </head>
+ <body>
+  <header>
+   <h1>
+    Car Dealership Bus
+   </h1>
+   <nav>
+    <a href="#home">
+     Home
+    </a>
+    <a href="#inventory">
+     Inventory
+    </a>
+    <a href="#services">
+     Services
+    </a>
+    <a href="#contact">
+     Contact
+    </a>
+   </nav>
+  </header>
+  <main>
+   <section id="home">
+    <h2>
+     Welcome to Car Dealership Bus
+    </h2>
+    <p>
+     Your mobile solution for buying and selling quality cars on the go. Explore our full inventory below with detailed information on each vehicle.
+    </p>
+    <img alt="A modern car dealership bus painted with vibrant colors, parked in a city street with cars displayed inside through large windows" height="300" src="https://storage.googleapis.com/a1aa/image/84757ee0-5e40-4d44-ab8c-ba8d6aa21ddb.jpg" width="600"/>
+   </section>
+   <section id="inventory">
+    <h2>
+     Full Inventory
+    </h2>
+    <div class="car-list">
+     <article class="car-card">
+      <img alt="Red 2023 Sedan LX parked on a city street with modern buildings in background" height="180" src="https://storage.googleapis.com/a1aa/image/f469f865-b333-4490-db57-3c0924326178.jpg" width="300"/>
+      <div class="car-details">
+       <h3>
+        2023 Sedan LX
+       </h3>
+       <p>
+        A comfortable and fuel-efficient sedan perfect for city and highway driving.
+       </p>
+       <ul>
+        <li><strong>Engine:</strong> 2.0L 4-cylinder</li>
+        <li><strong>Horsepower:</strong> 158 hp</li>
+        <li><strong>Fuel Economy:</strong> 30 MPG city / 38 MPG highway</li>
+        <li><strong>Transmission:</strong> CVT Automatic</li>
+        <li><strong>Price:</strong> $22,500</li>
+       </ul>
+      </div>
+     </article>
+     <article class="car-card">
+      <img alt="Blue 2022 SUV Sport parked on a mountain road with scenic background" height="180" src="https://storage.googleapis.com/a1aa/image/6d6855c0-b77d-4103-9c31-ed3fa19d198d.jpg" width="300"/>
+      <div class="car-details">
+       <h3>
+        2022 SUV Sport
+       </h3>
+       <p>
+        Spacious SUV with advanced safety features and off-road capability.
+       </p>
+       <ul>
+        <li><strong>Engine:</strong> 3.5L V6</li>
+        <li><strong>Horsepower:</strong> 280 hp</li>
+        <li><strong>Fuel Economy:</strong> 20 MPG city / 27 MPG highway</li>
+        <li><strong>Transmission:</strong> 8-speed Automatic</li>
+        <li><strong>Price:</strong> $35,000</li>
+       </ul>
+      </div>
+     </article>
+     <article class="car-card">
+      <img alt="White 2023 Electric Hatchback charging at a station in urban area" height="180" src="https://storage.googleapis.com/a1aa/image/540ccc43-7d74-4115-7772-106f602b71de.jpg" width="300"/>
+      <div class="car-details">
+       <h3>
+        2023 Electric Hatchback
+       </h3>
+       <p>
+        Eco-friendly electric car with modern design and long-range battery.
+       </p>
+       <ul>
+        <li><strong>Battery Range:</strong> 280 miles</li>
+        <li><strong>Charging Time:</strong> 8 hours (Level 2)</li>
+        <li><strong>Horsepower:</strong> 150 hp</li>
+        <li><strong>Transmission:</strong> Single-speed Automatic</li>
+        <li><strong>Price:</strong> $29,900</li>
+       </ul>
+      </div>
+     </article>
+     <article class="car-card">
+      <img alt="Black 2021 Pickup Truck parked on a rural road with mountains in background" height="180" src="https://storage.googleapis.com/a1aa/image/1a2b3c4d-5678-90ab-cdef-1234567890ab.jpg" width="300"/>
+      <div class="car-details">
+       <h3>
+        2021 Pickup Truck XLT
+       </h3>
+       <p>
+        Powerful pickup truck with towing capacity and rugged design.
+       </p>
+       <ul>
+        <li><strong>Engine:</strong> 5.0L V8</li>
+        <li><strong>Horsepower:</strong> 395 hp</li>
+        <li><strong>Towing Capacity:</strong> 12,000 lbs</li>
+        <li><strong>Transmission:</strong> 10-speed Automatic</li>
+        <li><strong>Price:</strong> $42,000</li>
+       </ul>
+      </div>
+     </article>
+     <article class="car-card">
+      <img alt="Silver 2020 Convertible sports car parked on a coastal road with ocean view" height="180" src="https://storage.googleapis.com/a1aa/image/5f6e7d8c-9a0b-4c3d-8e7f-123456789abc.jpg" width="300"/>
+      <div class="car-details">
+       <h3>
+        2020 Convertible Sport
+       </h3>
+       <p>
+        Stylish convertible with sporty performance and premium features.
+       </p>
+       <ul>
+        <li><strong>Engine:</strong> 2.3L Turbocharged 4-cylinder</li>
+        <li><strong>Horsepower:</strong> 310 hp</li>
+        <li><strong>0-60 MPH:</strong> 5.5 seconds</li>
+        <li><strong>Transmission:</strong> 6-speed Manual</li>
+        <li><strong>Price:</strong> $38,500</li>
+       </ul>
+      </div>
+     </article>
+     <article class="car-card">
+      <img alt="White 2019 Minivan parked in suburban driveway with family loading luggage" height="180" src="https://storage.googleapis.com/a1aa/image/7a8b9c0d-1e2f-3a4b-5c6d-7e8f9a0b1c2d.jpg" width="300"/>
+      <div class="car-details">
+       <h3>
+        2019 Family Minivan
+       </h3>
+       <p>
+        Spacious minivan with seating for 7 and family-friendly features.
+       </p>
+       <ul>
+        <li><strong>Engine:</strong> 3.6L V6</li>
+        <li><strong>Horsepower:</strong> 287 hp</li>
+        <li><strong>Fuel Economy:</strong> 19 MPG city / 28 MPG highway</li>
+        <li><strong>Transmission:</strong> 6-speed Automatic</li>
+        <li><strong>Price:</strong> $27,000</li>
+       </ul>
+      </div>
+     </article>
+    </div>
+   </section>
+   <section id="services">
+    <h2>
+     Our Services
+    </h2>
+    <ul>
+     <li>
+      On-the-spot test drives inside the bus.
+     </li>
+     <li>
+      Financing and leasing options.
+     </li>
+     <li>
+      Trade-in evaluations.
+     </li>
+     <li>
+      Vehicle maintenance and repair bookings.
+     </li>
+     <li>
+      Extended warranty plans.
+     </li>
+     <li>
+      Vehicle history reports.
+     </li>
+    </ul>
+   </section>
+   <section id="contact">
+    <h2>
+     Contact Us
+    </h2>
+    <p>
+     Email: info@cardealershipbus.com
+    </p>
+    <p>
+     Phone: +1 (555) 987-6543
+    </p>
+    <p>
+     Location: Mobile - Check our schedule for stops near you!
+    </p>
+   </section>
+  </main>
+  <footer>
+   © 2024 Car Dealership Bus. All rights reserved.
+  </footer>
+ </body>
+</html>
